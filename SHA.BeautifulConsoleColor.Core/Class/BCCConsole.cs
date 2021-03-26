@@ -13,11 +13,17 @@ namespace SHA.BeautifulConsoleColor.Core.Class
         /// <summary>
         /// Write In Console With Your Color And Reset It   
         /// </summary>
-        public static void Write(BCCConsoleColor color,params string[] value)
+        public static void Write(BCCConsoleColor color,bool continuous, params string[] value)
         {
             Console.ForegroundColor = ColorFinder(color);
             foreach (string s in value)
             {
+                if (continuous)
+                {
+                    Console.Write(s);
+                    continue;
+                }
+
                 Console.WriteLine(s);
             }
             Console.ResetColor();

@@ -1,4 +1,6 @@
 ﻿using System;
+using SHA.BeautifulConsoleColor.Core.Class;
+using SHA.BeautifulConsoleColor.Core.Model;
 
 namespace SHA.BeautifulConsoleColor.Test
 {
@@ -6,7 +8,9 @@ namespace SHA.BeautifulConsoleColor.Test
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.WriteLine("Masir");
+            BCCConsole.Write(BCCConsoleColor.DarkBlue,true,"Amir","Asir");
         }
     }
 }
