@@ -3,11 +3,27 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Mini Console Print For Custom Console Color And Reset Esay To Use</Description>
+    <Copyright>2021</Copyright>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <PackageIcon>fr01bcc3dxx.jpg</PackageIcon>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseFile>Licence.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Extension\" />
     <Folder Include="Config\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\Amir Slj\Desktop\fr01bcc3dxx.jpg">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="C:\Users\Amir Slj\Desktop\Licence.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
